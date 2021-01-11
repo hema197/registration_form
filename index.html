@@ -13,10 +13,10 @@
         <div class="container">
             <form name="myform" method="POST" onsubmit="return formValidation()" action="home.html">
                 <label for="fname">First Name:</label>
-                <input type="text" name="fname" id="first" pattern="[a-zA-Z][a-zA-Z]*" oninvalid="checkValidation()"/>
+                <input type="text" name="fname" id="first" pattern="[a-zA-Z][a-zA-Z]+" title="First name can contain only alphabets!" oninvalid="checkValidation()"/>
                 <br>
                 <label for="lname">Last Name:</label>
-                <input type="text" name="lname" id="last" pattern="[a-zA-Z][a-zA-Z]*" oninvalid="checkValidation()"/>
+                <input type="text" name="lname" id="last" pattern="[a-zA-Z][a-zA-Z]+" title="last name can contain only alphabets!" oninvalid="checkValidation()"/>
                 <br>
                 <label for="mail" >Email:</label>
                 <input type="email" name="mail" id="mail" oninvalid="checkValidation()"/>
@@ -31,7 +31,7 @@
                 <input type="text" name="address" id="address" oninvalid="checkValidation()"/>
                 <br>
                 <label for="contact">Contact No:</label>
-                <input type="tel" name="contact" id="contact" pattern="[1-9][0-9]{9}" oninvalid="checkValidation()"/>
+                <input type="tel" name="contact" id="contact" pattern="[1-9][0-9]{9}" title="contact number must have 10 digits" oninvalid="checkValidation()"/>
                 <br>
                 <button type="submit" id="submit">Submit</button>
                 <span><button type="button" id="cancel">Cancel</button></span>

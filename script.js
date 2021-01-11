@@ -81,10 +81,3 @@ function checkValidation(){
         
     }
 }
-
-    
-
-
-
-    
-
